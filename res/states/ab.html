@@ -1,0 +1,42 @@
+<a href="##" onClick="history.go(-1); return false;"><font color="yellow" size="6">Home</font></a>
+<?php include('session.php'); 
+include('header.php');
+include('navbar.php'); ?>
+<html>
+<head>
+<title>
+welcome</title>
+</head>
+<body>
+<body background="image\login.jpg">
+<center>
+<font size="6" color="yellow"><br>
+<p>Don't waste time by waiting for ordered food</p>
+<p> we done easier for you</p>
+<br>
+<br>
+<br>
+Select your district: <select name="formal" onchange="javascript:handleSelect(this)">
+<option value="">select</option>
+<option value="hotels/chittoor">chittoor</option>
+<option value="hotels/new">kurnool</option>
+<option value="hotels/new">kadapa</option>
+<option value="hotels/new">anantapur</option>
+<option value="hotels/new">east godavari</option>
+<option value="hotels/new">west godavari</option>
+<option value="hotels/new">krishna</option>
+<option value="hotels/new">prakasam</option>
+<option value="hotels/new">vizag</option>
+<option value="hotels/new">guntur</option>
+<option value="hotels/new">srikakulam</option>
+<option value="hotels/new">visakhapatnam</option>
+<option value="hotels/new">nellore</option>
+
+</select>
+
+<script type="text/javascript">
+function handleSelect(elm)
+{
+window.location = elm.value+".html";
+}
+</script>
